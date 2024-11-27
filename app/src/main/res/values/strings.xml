@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">SkinSensePro</string>
+    <string name="app_name">SkinSense Pro</string>
+    <string name="app_subheading">Your one step solution for selecting the right product.</string>
+    <string name="featured_section_title">Featured Section</string>
+    <string name="suggestions_title">Suggestions</string>
+    <string name="liked_items_title">Liked Items</string>
+    <string name="scanned_items_title">Scanned Items</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="dont_have_account">Don’t have an account? Signup</string>
+    <string name="login_text">Login</string>
+    <string name="create_account_text">Create Account</string>
 </resources>
