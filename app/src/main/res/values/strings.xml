@@ -9,4 +9,5 @@
     <string name="dont_have_account">Don’t have an account? Signup</string>
     <string name="login_text">Login</string>
     <string name="create_account_text">Create Account</string>
+    <string name="logout_text">Logout</string>
 </resources>
