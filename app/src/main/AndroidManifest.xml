@@ -12,15 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinSensePro"
         tools:targetApi="31">
+
+        <!-- Splash Screen Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Signup Activity -->
+        <activity android:name=".SignupActivity" android:exported="true" />
+
+        <!-- Login Activity -->
+        <activity android:name=".LoginActivity" android:exported="true" />
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity" android:exported="true" />
+<!--        Product Details -->
+        <activity android:name=".ProductDetailsActivity" />
     </application>
 
 </manifest>

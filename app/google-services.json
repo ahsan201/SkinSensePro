@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399992170892",
+    "project_id": "skinsense-pro",
+    "storage_bucket": "skinsense-pro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399992170892:android:bfdfcdc5773976149e0ea9",
+        "android_client_info": {
+          "package_name": "com.example.skinsensepro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX9TxIGGEAgJtltLo7xcyjzprHwmRgRfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

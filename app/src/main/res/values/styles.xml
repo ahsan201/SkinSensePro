@@ -1,0 +1,7 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.SkinSensePro" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+</resources>

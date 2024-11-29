@@ -10,4 +10,12 @@
     <string name="login_text">Login</string>
     <string name="create_account_text">Create Account</string>
     <string name="logout_text">Logout</string>
+
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="rewrite_password">rewrite password</string>
+    <string name="get_product">Get Product</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
