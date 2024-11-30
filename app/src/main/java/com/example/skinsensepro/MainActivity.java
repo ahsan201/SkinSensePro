@@ -1,5 +1,6 @@
 package com.example.skinsensepro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -30,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Set a click listener for the Floating Action Button
-        binding.fab.setOnClickListener(view ->
-                Toast.makeText(this, "FAB Clicked!", Toast.LENGTH_SHORT).show()
-        );
+        binding.fab.setOnClickListener(view -> {
+            // Open the BarcodeScannerActivity when the FAB is clicked
+            Intent intent = new Intent(this, BarcodeScannerActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void setupBottomNavigation() {
