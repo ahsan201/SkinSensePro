@@ -68,7 +68,7 @@ public class ProfileFragment extends Fragment {
         db.collection("users").document(userId).get()
                 .addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {
-                        String fullName = documentSnapshot.getString("fullName");
+                        String fullName = documentSnapshot.getString("name");
                         String email = documentSnapshot.getString("email");
 
                         userNameTextView.setText(fullName != null ? fullName : "User");

@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,26 +18,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinSensePro"
         tools:targetApi="31">
-
-        <!-- Splash Screen Activity -->
+        <activity
+            android:name=".BarcodeScannerActivity"
+            android:exported="false" />
+        <!-- Add this activity for barcode scanning -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:exported="true"
+            android:theme="@style/zxing_CaptureTheme" />
+        <activity
+            android:name=".CustomCaptureActivity"
+            android:exported="true"
+            android:theme="@style/zxing_CaptureTheme" /> <!-- Splash Screen Activity -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Signup Activity -->
-        <activity android:name=".SignupActivity" android:exported="true" />
-
-        <!-- Login Activity -->
-        <activity android:name=".LoginActivity" android:exported="true" />
-
-        <!-- Main Activity -->
-        <activity android:name=".MainActivity" android:exported="true" />
-<!--        Product Details -->
+        </activity> <!-- Signup Activity -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" /> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- Product Details -->
         <activity android:name=".ProductDetailsActivity" />
     </application>
 

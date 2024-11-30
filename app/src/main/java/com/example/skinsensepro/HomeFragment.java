@@ -1,5 +1,6 @@
 package com.example.skinsensepro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -84,6 +86,9 @@ public class HomeFragment extends Fragment {
 
         // Show default category
         selectCategory(makeupCategory, "makeup");
+
+        // Setup FAB for barcode scanning
+        setupFab();
     }
 
     private void fetchHeroImages() {
@@ -157,5 +162,18 @@ public class HomeFragment extends Fragment {
                 .addOnFailureListener(e -> {
                     Toast.makeText(getContext(), "Failed to load products: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
+    }
+
+    private void setupFab() {
+        // Access the FAB from the activity's layout
+        FloatingActionButton fab = getActivity().findViewById(R.id.fab);
+        if (fab == null) {
+            throw new NullPointerException("FAB not found in activity_main.xml");
+        }
+        fab.setOnClickListener(v -> {
+            // Open BarcodeScannerActivity when the FAB is clicked
+            Intent intent = new Intent(getContext(), BarcodeScannerActivity.class);
+            startActivity(intent);
+        });
     }
 }
