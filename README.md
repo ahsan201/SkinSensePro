@@ -1,8 +1,8 @@
 # SkinSense Pro
 
-![GitHub repo size](https://img.shields.io/github/repo-size/ahsan201/SkinSense-Pro)
-![GitHub contributors](https://img.shields.io/github/contributors/ahsan201/SkinSense-Pro)
-![GitHub forks](https://img.shields.io/github/forks/ahsan201/SkinSense-Pro?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/ahsan201/SkinSensePro)
+![GitHub contributors](https://img.shields.io/github/contributors/ahsan201/SkinSensePro)
+![GitHub forks](https://img.shields.io/github/forks/ahsan201/SkinSensePro?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/ahsan_habib_1?style=social)
 
 **SkinSense Pro** is your ultimate companion for selecting the right skincare and cosmetic products. The app offers a personalized experience with features like barcode scanning, product recommendations, and detailed product information based on user preferences and ingredients.
